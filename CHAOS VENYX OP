@@ -54,9 +54,31 @@ section2:addButton("InstaSpam2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/ag/main/ag"))()
 end)
 
-section2:addButton("InfiniteYield",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+local mom = sussy:addPage("Teleports",444444)
+
+local daddy= mom:addSection("Teleports")
+daddy:addButton("House", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-180.82843017578, 76.891937255859, -34.355648040771)
 end)
+
+daddy:addButton("Bridge",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.585029602051, 81.533241271973, 84.901847839355)
+end)
+
+daddy:addButton("River",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-167.01170349121, 58.672439575195, 152.29058837891)
+end)
+
+daddy:addButton("Beach",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(149.787109375, 60.278778076172, 86.923881530762)
+end)
+
+daddy:addButton("Isolate yourself",function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-515.17340087891, 75.513259887695, 78.579216003418)
+end)
+
+
+
 
 local lol = sussy:addPage("Credits", 5012544693)
 local sus = lol:addSection("Credits")
@@ -71,4 +93,4 @@ step:addButton("KillIt", function()
     if mother then 
         mother:Destroy()
     end
-    end)
+end)
