@@ -4,11 +4,11 @@ local sussy = library.new("Sexy", 5013109572)
 
 local themes = {
 Background = Color3.fromRGB(45, 45, 185),
-Glow = Color3.fromRGB(0, 0, 0),
+Glow = Color3.fromRGB(34, 250, 0),
 Accent = Color3.fromRGB(10, 10, 10),
 LightContrast = Color3.fromRGB(20, 20, 20),
 DarkContrast = Color3.fromRGB(14, 14, 14),  
-TextColor = Color3.fromRGB(255, 255, 255)
+TextColor = Color3.fromRGB(34, 228, 20)
 }
 
 
@@ -22,6 +22,10 @@ section1:addButton("Blood Dagger", function()
 local ohString1 = "Blood Dagger"
 
 game:GetService("Players").LocalPlayer.PlayerGui["Menu Screen"].RemoteEvent:FireServer(ohString1)
+local kiddo = game.Players.LocalPlayer.Character:FindFirstChild("Loaded")
+if kiddo then
+    kiddo:Destroy()
+    end
 end)
 
 
@@ -29,7 +33,12 @@ section1:addButton("Emerald Greatsword", function()
     local ohString1 = "Emerald Greatsword"
 
 game:GetService("Players").LocalPlayer.PlayerGui["Menu Screen"].RemoteEvent:FireServer(ohString1)
+local boye = game.Players.LocalPlayer.Character:FindFirstChild("Loaded")
+if boy then
+    boy:Destroy()
+    end
 end)
+
 
 
 section2:addButton("Pure Chaotic", function()
@@ -53,6 +62,11 @@ end)
 section2:addButton("InstaSpam2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/ag/main/ag"))()
 end)
+
+section2:addButton("InfYield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end)
+
 
 local mom = sussy:addPage("Teleports",444444)
 
