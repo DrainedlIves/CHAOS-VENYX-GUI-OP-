@@ -87,10 +87,18 @@ sus:addButton("CreditsF9", function()
 end)
 
 local bro = sussy:addPage("KillGUI", 5012544693)
-local step = bro:addSection("Kys")
+local step = bro:addSection("Quitting")
 step:addButton("KillIt", function()
     local mother = game:GetService("CoreGui"):FindFirstChild("Sexy")
     if mother then 
         mother:Destroy()
     end
 end)
+
+step:addButton("CLOSE CHAOTIC", function()
+    for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetDescendants()) do
+        if v.Name ~="Peacemaker" then
+            v:Destroy()
+        end
+        end
+        end)
