@@ -54,6 +54,9 @@ section2:addButton("InstaSpam2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/ag/main/ag"))()
 end)
 
+section2:addButton("InfiniteYield",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 local lol = sussy:addPage("Credits", 5012544693)
 local sus = lol:addSection("Credits")
