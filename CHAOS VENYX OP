@@ -43,10 +43,6 @@ section2:addButton("ChaoticGui", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/ChaoticGUI-/main/Hmmmm"))()
 end)
 
-section2:addButton("Instaattack", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/hah/main/hah"))()
-end)
-
 section2:addButton("InstaSpam", function()
     
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/agag/main/6"))()
