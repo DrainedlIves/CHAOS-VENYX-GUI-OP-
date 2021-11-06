@@ -4,17 +4,19 @@ local sussy = library.new("Sexy", 5013109572)
 
 local themes = {
 Background = Color3.fromRGB(45, 45, 185),
-Glow = Color3.fromRGB(34, 250, 0),
+Glow = Color3.fromRGB(0, 0, 0),
 Accent = Color3.fromRGB(10, 10, 10),
 LightContrast = Color3.fromRGB(20, 20, 20),
 DarkContrast = Color3.fromRGB(14, 14, 14),  
-TextColor = Color3.fromRGB(34, 228, 20)
+TextColor = Color3.fromRGB(255, 255, 255)
 }
 
 
 local page = sussy:addPage("CHAOS", 5012544693)
 local section1 = page:addSection("Weapons")
 local section2 = page:addSection("Loadstrings")
+local section3 = page:addSection("Other")
+
 
 
 section1:addButton("Blood Dagger", function()
@@ -22,10 +24,6 @@ section1:addButton("Blood Dagger", function()
 local ohString1 = "Blood Dagger"
 
 game:GetService("Players").LocalPlayer.PlayerGui["Menu Screen"].RemoteEvent:FireServer(ohString1)
-local kiddo = game.Players.LocalPlayer.Character:FindFirstChild("Loaded")
-if kiddo then
-    kiddo:Destroy()
-    end
 end)
 
 
@@ -33,12 +31,7 @@ section1:addButton("Emerald Greatsword", function()
     local ohString1 = "Emerald Greatsword"
 
 game:GetService("Players").LocalPlayer.PlayerGui["Menu Screen"].RemoteEvent:FireServer(ohString1)
-local boye = game.Players.LocalPlayer.Character:FindFirstChild("Loaded")
-if boy then
-    boy:Destroy()
-    end
 end)
-
 
 
 section2:addButton("Pure Chaotic", function()
@@ -63,10 +56,12 @@ section2:addButton("InstaSpam2", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrainedlIves/ag/main/ag"))()
 end)
 
-section2:addButton("InfYield", function()
+section3:addButton("InfYield", function()
+    print("Loading INF YIELD") 
+    wait(2)
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("INF YIELD LOADED IN 2 SECONDS")
     end)
-
 
 local mom = sussy:addPage("Teleports",444444)
 
@@ -102,7 +97,7 @@ end)
 
 local bro = sussy:addPage("KillGUI", 5012544693)
 local step = bro:addSection("Quitting")
-step:addButton("KillIt", function()
+step:addButton("Kill gui (might need to click mult if more guis are open", function()
     local mother = game:GetService("CoreGui"):FindFirstChild("Sexy")
     if mother then 
         mother:Destroy()
